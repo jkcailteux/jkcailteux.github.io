@@ -2029,12 +2029,12 @@
 /* panel */
 $(document).ready(function(){
 $('head').prepend('<link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">');
-$('body').prepend('<div id="panel"><div class="navbar navbar-inverse navbar-fixed-top" id="advanced"><span class="trigger"><strong></strong><em></em></span><div class="navbar-inner"><div class="container"><button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-top-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="brand" href="index.html">Bootstrap</a><div class="nav-collapse collapse nav-top-collapse"><ul class="nav"><li class="home"><a href="index.html"><img src="img/tm/tm_home.png"></a></li><li class="divider-vertical"></li><li class=""><a href="assets/scaffolding.html">Scaffolding</a></li><li class=""><a href="assets/base-css.html">Base CSS</a></li><li><a href="assets/components.html">Components</a></li><li class=""><a href="assets/javascript.html">Javascript</a></li><li class="divider-vertical"></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">TM add-ons <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="404.html">Pages</a><ul><li><a href="assets/under_construction.html">Under Construction</a></li><li><a href="assets/intro.html">Intro Page</a></li><li><a href="404.html">404 page</a></li></ul></li><li><a href="assets/portfolio.html">Portfolio</a></li><li><a href="assets/slider.html">Slider</a></li><li><a href="assets/social_media.html">Social and Media<br> Sharing</a></li><li><a href="assets/css3.html">CSS3 Tricks</a></li></ul></li></ul></div></div></div></div></div>');
-}); 
- $(window).scroll(function(){if ($(this).scrollTop() > 0) {$("#advanced").css({position:'fixed'});} else {$("#advanced").css({position:'relative'});}});  
-$(function(){  
-    $.cookie("panel");  
-  $.cookie("panel2"); 
+//$('body').prepend('<div id="panel"><div class="navbar navbar-inverse navbar-fixed-top" id="advanced"><span class="trigger"><strong></strong><em></em></span><div class="navbar-inner"><div class="container"><button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-top-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="brand" href="index.html">Bootstrap</a><div class="nav-collapse collapse nav-top-collapse"><ul class="nav"><li class="home"><a href="index.html"><img src="img/tm/tm_home.png"></a></li><li class="divider-vertical"></li><li class=""><a href="assets/scaffolding.html">Scaffolding</a></li><li class=""><a href="assets/base-css.html">Base CSS</a></li><li><a href="assets/components.html">Components</a></li><li class=""><a href="assets/javascript.html">Javascript</a></li><li class="divider-vertical"></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">TM add-ons <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="404.html">Pages</a><ul><li><a href="assets/under_construction.html">Under Construction</a></li><li><a href="assets/intro.html">Intro Page</a></li><li><a href="404.html">404 page</a></li></ul></li><li><a href="assets/portfolio.html">Portfolio</a></li><li><a href="assets/slider.html">Slider</a></li><li><a href="assets/social_media.html">Social and Media<br> Sharing</a></li><li><a href="assets/css3.html">CSS3 Tricks</a></li></ul></li></ul></div></div></div></div></div>');
+});
+ $(window).scroll(function(){if ($(this).scrollTop() > 0) {$("#advanced").css({position:'fixed'});} else {$("#advanced").css({position:'relative'});}});
+$(function(){
+    $.cookie("panel");
+  $.cookie("panel2");
   var strCookies = $.cookie("panel");
   var strCookies2 = $.cookie("panel2");
   if(strCookies=='boo')
@@ -2067,11 +2067,11 @@ $(function(){
 // IPad/IPhone
   var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
     ua = navigator.userAgent,
- 
+
     gestureStart = function () {
         viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
     },
- 
+
     scaleFix = function () {
       if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
         viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
@@ -2082,11 +2082,11 @@ scaleFix();
 
 // Menu Android
   var userag = navigator.userAgent.toLowerCase();
-  var isAndroid = userag.indexOf("android") > -1; 
+  var isAndroid = userag.indexOf("android") > -1;
   if(isAndroid) {
     $('.sf-menu').responsiveMenu({autoArrows:true});
   }
-    
+
 });
 
 /* ------ fix fixed position for Android -----*/

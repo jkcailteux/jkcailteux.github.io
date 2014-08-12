@@ -303,7 +303,7 @@ p {
 	font-style:italic;}
 .row-2 h3 {
 	margin:10px 0;
-	font-style:normal;}	
+	font-style:normal;}
 .ic {
   border:0;
   float:right;
@@ -606,7 +606,7 @@ p {
 }
 .address-1 span {
   display: inline-block;
-  width: 80px;
+  width: 100px;
   color: #ffffff;
 }
 .mail-1 {
